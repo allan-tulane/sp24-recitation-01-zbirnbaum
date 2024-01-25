@@ -1,7 +1,7 @@
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
-**Name (Team Member 2):**_________________________
+**Name (Team Member 1):** Gabby Reese 
+**Name (Team Member 2):** Zoe Birnbaum
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
 
@@ -39,11 +39,11 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
-**TODO: your answer goes here**
+The worst case input value of 'key' for both 'linear_search' and 'binary_search' is a key that's not in the list.
 
 - [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
-**TODO: your answer goes here**
+The best case input value of 'key' for 'linear_search' is a key that is in the first index of the list. The best case input value of 'key' for 'binary_search' is a key thats index is in the middle.
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
@@ -51,7 +51,15 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 - [ ] 8. Call `print_results(compare_search())` and paste the results here:
 
-**TODO: add your timing results here**
+|            n |   linear |   binary |
+|--------------|----------|----------|
+|       10.000 |    0.005 |    0.006 |
+|      100.000 |    0.008 |    0.005 |
+|     1000.000 |    0.102 |    0.007 |
+|    10000.000 |    1.150 |    0.026 |
+|   100000.000 |    8.505 |    0.027 |
+|  1000000.000 |  191.411 |    0.049 |
+| 10000000.000 | 2278.327 |    0.341 |
 
 - [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 
