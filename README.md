@@ -67,9 +67,10 @@ These theoretical running times match our empirical results because the worst-ca
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times.
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search?
-    O(nlogn)
+    O(kn)
     
   + For binary search?
-    O(n)
+    O(log_2(kn^2))
     
-  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting?
+    When the value of k is greater than n.
