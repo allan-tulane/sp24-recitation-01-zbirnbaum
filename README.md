@@ -70,7 +70,7 @@ These theoretical running times match our empirical results because the worst-ca
     O(kn)
     
   + For binary search?
-    O(log_2(kn^2))
+    O(klog n + n^2)
     
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting?
     When the value of k is greater than n.
